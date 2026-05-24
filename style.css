@@ -84,7 +84,7 @@ main {
 .conta:has(input:hover) div,
 .pessoas:has(input:focus) .input-box,
 .pessoas:has(input:hover) .input-box,
-.gorjeta #outra:focus
+.gorjeta #outra:focus,
 .gorjeta #outra:hover {
     outline: 2px solid var(--light-green);
     cursor: pointer;
@@ -112,6 +112,11 @@ main {
 
 }
 
+.gorjeta .botao-ativo {
+    background-color: var(--light-green);
+    color: var(--green-800);
+}
+
 .gorjeta input[type="button"]:hover,
 .resultados button:hover {
     background-color:var(--green-hover);
@@ -127,6 +132,7 @@ main {
 
 .gorjeta #outra::placeholder {
     color: var(--green-300);
+
 }
 
 .pessoas .textos {
@@ -140,6 +146,7 @@ main {
 .pessoas #erro-div {
     outline: 2px solid var(--danger);
 }
+
 .pessoas #erro {
     font-size: 0.75rem;
     color: var(--danger);
